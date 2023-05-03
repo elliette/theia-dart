@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "browser-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "@theia/core": "latest",
+    "@theia/editor": "latest",
+    "@theia/filesystem": "latest",
+    "@theia/markers": "latest",
+    "@theia/messages": "latest",
+    "@theia/monaco": "latest",
+    "@theia/navigator": "latest",
+    "@theia/preferences": "latest",
+    "@theia/process": "latest",
+    "@theia/terminal": "latest",
+    "@theia/workspace": "latest",
+    "@theia/plugin-ext-vscode": "latest",
+    "@theia/vsx-registry": "latest",
+    "dart-devtools-integration": "0.0.0"
+  },
+  "devDependencies": {
+    "@theia/cli": "latest",
+    "typescript": "4.8.4"
+  },
+  "theiaPluginsDir": "plugins",
+  "theiaPlugins": {
+    "vscode-dart": "https://github.com/Dart-Code/Dart-Code/releases/download/v3.62.0/dart-code-3.60.0.vsix",
+    "vscode-flutter": "https://github.com/Dart-Code/Flutter/releases/download/v3.60.0/flutter-3.60.0.vsix"
+  },
+  "scripts": {
+    "prepare": "theia build --mode development",
+    "start": "theia start --plugins=local-dir:plugins",
+    "watch": "theia build --watch --mode development",
+    "download:plugins": "theia download:plugins"
+  },
+  "theia": {
+    "target": "browser"
+  }
+}
