@@ -7,6 +7,7 @@ import { EditorManager } from '@theia/editor/lib/browser/editor-manager';
 
 @injectable()
 export class DartDevToolsIntegrationFrontendContribution implements FrontendApplicationContribution {
+    
     @inject(FrontendApplicationStateService)
     protected readonly stateService: FrontendApplicationStateService;
 
@@ -68,6 +69,7 @@ export class DartDevToolsIntegrationCommandContribution implements CommandContri
         });
     }
 }
+
 @injectable()
 export class DartDevToolsIntegrationMenuContribution implements MenuContribution {
 
