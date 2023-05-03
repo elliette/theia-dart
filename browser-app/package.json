@@ -24,7 +24,7 @@
   },
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {
-    "vscode-dart": "https://github.com/Dart-Code/Dart-Code/releases/download/v3.62.0/dart-code-3.60.0.vsix",
+    "vscode-dart": "https://github.com/Dart-Code/Dart-Code/releases/download/v3.60.0/dart-code-3.60.0.vsix",
     "vscode-flutter": "https://github.com/Dart-Code/Flutter/releases/download/v3.60.0/flutter-3.60.0.vsix"
   },
   "scripts": {

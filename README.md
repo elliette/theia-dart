@@ -14,10 +14,12 @@ Download all plugins (e.g. Dart-Code plugins)
     mkdir plugins
     yarn download:plugins
 
-Run Theia in the browser
+Compile Theia and run in the browser
 
     yarn
     yarn start
+
+> Note: You will likely see a lot of errors in the terminal! These seem to be false positives and don't prevent Theia from being compiled and run.
 
 Open http://localhost:3000 in the browser.
 
